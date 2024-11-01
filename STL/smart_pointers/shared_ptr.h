@@ -23,7 +23,7 @@ namespace my {
         struct Control_Block {
             
             std::size_t cnt_shared;
-            std::size_t cnt_weak : 62;
+            std::size_t cnt_weak;
             
             explicit Control_Block() noexcept
                 : cnt_shared(1u),

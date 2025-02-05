@@ -5,7 +5,6 @@
 
 namespace threadsafe {
 
-
 	template<typename T>
 	class queue {
 
@@ -31,6 +30,8 @@ namespace threadsafe {
 
 		queue& operator=(const queue&) = delete;
 
+		//we can move it, though it is not so easy to implement ...
+		
 		std::shared_ptr<T> try_pop();
 
 		bool try_pop(T& value);

@@ -5,6 +5,7 @@
 
 namespace threadsafe {
 
+
 	template<typename T>
 	class queue {
 
